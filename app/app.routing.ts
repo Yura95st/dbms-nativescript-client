@@ -4,15 +4,15 @@ import { TableComponent } from "./pages/table/table.component";
 
 export const routes = [
     {
-        path: 'databases/:dbName/:tableName',
+        path: "databases/:dbName/:tableName",
         component: TableComponent
     },
     {
-        path: 'databases/:dbName',
+        path: "databases/:dbName",
         component: DatabaseComponent
     },
     {
-        path: 'databases',
+        path: "",
         component: DatabaseListComponent
     }
 ];

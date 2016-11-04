@@ -1,8 +1,8 @@
 {
-  "name": "DBMS NativeScript Client",
+  "name": "DbmsNativeScriptClient",
   "version": "1.0.0",
   "nativescript": {
-    "id": "org.nativescript.dbms-nativescript-client",
+    "id": "org.nativescript.DbmsNativeScriptClient",
     "tns-ios": {
       "version": "2.3.0"
     },
