@@ -1,0 +1,17 @@
+<GridLayout rows="auto, *">
+    <StackLayout row="0" orientation="vertical">
+        <StackLayout *ngFor="let attr of table?.Attributes" orientation="horizontal" class="small-spacing">
+            <Label [text]="attr.Name"></Label>
+            <Switch checked="true" (propertyChange)="onSwitchChange(attr.Name, $event.value)"></Switch>
+        </StackLayout>
+    </StackLayout>
+
+    <ListView row="1" [items]="resultTable?.Rows" class="small-spacing">
+        <template let-item="item">
+            <Label [text]="getRowStringValue(item)" class="medium-spacing" textWrap="true"></Label>
+        </template>
+    </ListView>
+
+    <ActivityIndicator row="1" [busy]="isLoading" [visibility]="isLoading ? 'visible' : 'collapse'" horizontalAlignment="center"
+        verticalAlignment="center"></ActivityIndicator>
+</GridLayout>

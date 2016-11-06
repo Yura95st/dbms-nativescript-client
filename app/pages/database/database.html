@@ -1,0 +1,10 @@
+<GridLayout>
+    <ListView [items]="database?.TableNames" (itemTap)="onItemTap($event)" class="small-spacing">
+        <template let-item="item">
+            <Label [text]="item" class="medium-spacing"></Label>
+        </template>
+    </ListView>
+
+    <ActivityIndicator [busy]="isLoading" [visibility]="isLoading ? 'visible' : 'collapse'" horizontalAlignment="center"
+        verticalAlignment="center"></ActivityIndicator>
+</GridLayout>
