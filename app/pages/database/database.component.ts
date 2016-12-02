@@ -6,9 +6,10 @@ import { Database } from "../../shared/database.model";
 import { DatabaseService } from "../../shared/database.service";
 
 @Component({
+    moduleId: module.id,
     selector: "database",
-    templateUrl: "pages/database/database.html",
-    styleUrls: ["pages/database/database-common.css", "pages/database/database.css"],
+    templateUrl: "database.html",
+    styleUrls: ["database-common.css", "database.css"],
 })
 export class DatabaseComponent implements OnInit {
 

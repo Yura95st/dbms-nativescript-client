@@ -5,9 +5,10 @@ import { Page } from "ui/page";
 import { DatabaseService } from "../../shared/database.service";
 
 @Component({
+    moduleId: module.id,
     selector: "my-app",
-    templateUrl: "pages/database-list/database-list.html",
-    styleUrls: ["pages/database-list/database-list-common.css", "pages/database-list/database-list.css"],
+    templateUrl: "database-list.html",
+    styleUrls: ["database-list-common.css", "database-list.css"],
 })
 export class DatabaseListComponent implements OnInit {
 

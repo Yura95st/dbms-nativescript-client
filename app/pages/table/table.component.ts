@@ -8,9 +8,10 @@ import { Attribute } from "../../shared/attribute.model";
 import { Row } from "../../shared/row.model";
 
 @Component({
+    moduleId: module.id,
     selector: "my-table",
-    templateUrl: "pages/table/table.html",
-    styleUrls: ["pages/table/table-common.css", "pages/table/table.css"],
+    templateUrl: "table.html",
+    styleUrls: ["table-common.css", "table.css"],
 })
 export class TableComponent implements OnInit {
 
